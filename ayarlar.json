@@ -1,8 +1,8 @@
 {
-  "prefix": "/",
-  "PREFIX": "/",
-  "sahipID": "274551537139712001",
-  "sahipAdı": "EnesOnurAta",
+  "prefix": "-",
+  "PREFIX": "-",
+  "sahipID": "482871396964237312",
+  "sahipAdı": "Mahir Damar",
   "sürüm": "3",
   "token": "process.env.Müzik_TOKEN",
   "GOOGLE_API_KEY": "AIzaSyDe021FDaJ9StqfyKO7Uf1CNI7DMIKbKAo"
