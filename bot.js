@@ -89,17 +89,7 @@ client.on("message", message => {
 });
 
 //OYNUYOR
-client.on('ready', () => {
-	function botStatus() {
-        let status = [
-            `${ayarlar.prefix}yardım`,
-            `Teşekkürler: ${client.guilds.size} sunucu`,
-            `Teşekkürler: ${client.guilds.reduce((a, b) => a + b.memberCount, 0).toLocaleString()} kullanıcı`,
-            `Tüm Hakları Enes Onur Ata'ya aittir`,
-            `Yeni Nesil Bot`,
-	    `Türkçe Bot`,
-	    `Sürüm: v${ayarlar.sürüm}`,
-	    `Prefix: ${ayarlar.prefix}`
+
         ];
         let rstatus = Math.floor(Math.random() * status.length);
 
