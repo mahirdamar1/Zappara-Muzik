@@ -89,7 +89,17 @@ client.on("message", message => {
 });
 
 //OYNUYOR
-
+client.on('ready', () => {
+	function botStatus() {
+        let status = [
+            `${ayarlar.prefix}yardım`,
+            `Teşekkürler: ${client.guilds.size} sunucu`,
+            `Teşekkürler: ${client.guilds.reduce((a, b) => a + b.memberCount, 0).toLocaleString()} kullanıcı`,
+            `Tüm Hakları Enes Onur Ata'ya aittir`,
+            `Yeni Nesil Bot`,
+	    `Türkçe Bot`,
+	    `Sürüm: v${ayarlar.sürüm}`,
+	    `Prefix: ${ayarlar.prefix}`
         ];
         let rstatus = Math.floor(Math.random() * status.length);
 
@@ -146,9 +156,7 @@ client.on('message', async msg => {
           let index = 0;
           msg.channel.send(`
 __**Sarki Listesi:**__
-
 ${videos.map(video2 => `**${++index} -** ${video2.title}`).join('\n')}
-
 Hangi şarkıyı seçmek istiyorsun? 1-10 Kadar sayı seç.
 					`);
           
@@ -196,9 +204,7 @@ Hangi şarkıyı seçmek istiyorsun? 1-10 Kadar sayı seç.
     if (!serverQueue) return msg.channel.send(':x: Müzik Çalmıyor');
     return msg.channel.send(`
 __**Şarkı Kuyruğu**__
-
 ${serverQueue.songs.map(song => `**-** ${song.title}`).join('\n')}
-
 **Oynatılan:** ${serverQueue.songs[0].title}
 		`);
   } else if (command === 'dur') {
