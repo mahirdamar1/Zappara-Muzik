@@ -95,9 +95,9 @@ client.on('ready', () => {
             `${ayarlar.prefix}yardım`,
             `Teşekkürler: ${client.guilds.size} sunucu`,
             `Teşekkürler: ${client.guilds.reduce((a, b) => a + b.memberCount, 0).toLocaleString()} kullanıcı`,
-            `Tüm Hakları Enes Onur Ata'ya aittir`,
-            `Yeni Nesil Bot`,
-	    `Türkçe Bot`,
+            `-yardım`,
+            `-yardım`,
+	    `-yardım`,
 	    `Sürüm: v${ayarlar.sürüm}`,
 	    `Prefix: ${ayarlar.prefix}`
         ];
